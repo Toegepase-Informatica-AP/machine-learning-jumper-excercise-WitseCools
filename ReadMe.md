@@ -12,7 +12,7 @@ Opdracht voor Vr Experience
 ## 1. Het Spelverloop
 
 Het spelverloop wordt hieronder schematisch voorgesteld. De jumper moet over de obstacles springen die naar hem toekomen.
-![Spelverloop](./Spelverloop.png)
+![Spelverloop](images/Spelverloop.png)
 ## 2. Observaties, acties en beloning
 ### 2.1 Observaties
 De jumper moet kunnen zien welke obstacles er op hem af komen. Dus geven we hem 2 3D Rayperception components. Omdat de obastacles van 2 kanten zullen komen. Een 3D Rayperception component kan eigenlijk gezien worden als een oog, deze component kan geconfigureerd worden met een verschillende grootte van gezichtsveld, aantal stralen... 
