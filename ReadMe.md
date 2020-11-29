@@ -110,7 +110,7 @@ Als we deze methodes aan elkaar wat koppelen en onze agent trainen krijgen we ee
 De configuratie van het brein van de jumper gebeurt in de jumper.yml file. Deze file bevindt zich in de Learning folder van ons project.
 Deze learning folder is ook de plek waar we het brein van de jumper trainen.
 
-![Config](Images/Config.png)
+![Config](Images/Config.PNG)
 
 ## Demo
 In de demo zien we het leerproces van de agent. We zien een positieve evolutie. Zo kan de agent al zelf de beslissing maken wanneer hij moet springen. 
