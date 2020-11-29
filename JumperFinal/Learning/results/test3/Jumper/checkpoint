@@ -1,0 +1,2 @@
+model_checkpoint_path: "Jumper-4718.ckpt"
+all_model_checkpoint_paths: "Jumper-4718.ckpt"

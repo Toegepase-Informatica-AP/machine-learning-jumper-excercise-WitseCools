@@ -1,0 +1,23 @@
+{
+    "Jumper": {
+        "checkpoints": [
+            {
+                "steps": 500027,
+                "file_path": "results\\demo1\\Jumper\\Jumper-500027.nn",
+                "reward": 0.6714035279133863,
+                "creation_time": 1606575723.5747745
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500027,
+            "file_path": "results\\demo1\\Jumper.nn",
+            "reward": 0.6714035279133863,
+            "creation_time": 1606575723.5747745
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.1.0",
+        "mlagents_version": "0.21.1",
+        "tensorflow_version": "2.3.1"
+    }
+}
