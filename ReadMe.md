@@ -12,7 +12,7 @@ Opdracht voor Vr Experience
 ## 1. Het Spelverloop
 
 Het spelverloop wordt hieronder schematisch voorgesteld. De jumper moet over de obstacles springen die naar hem toekomen.
-![Spelverloop](images/Spelverloop.png)
+![Spelverloop](Images/Spelverloop.png)
 ## 2. Observaties, acties en beloning
 ### 2.1 Observaties
 De jumper moet kunnen zien welke obstacles er op hem af komen. Dus geven we hem 2 3D Rayperception components. Omdat de obastacles van 2 kanten zullen komen. Een 3D Rayperception component kan eigenlijk gezien worden als een oog, deze component kan geconfigureerd worden met een verschillende grootte van gezichtsveld, aantal stralen... 
@@ -31,18 +31,18 @@ Het belangrijkste voor de jumper is dat hij over de obstacles springt, hierdoor 
 | -0.01|Jumper zweeft boven bepaalde hoogte|
 ## 3. Het Speelveld
 Hieronder is het speelveld zichtbaar met 2 wegen die elkaar kruisen en de jumper in het midden.
-![Speelveld](images/Speelveld.png)
+![Speelveld](Images/Speelveld.png)
 
 ## 4. Spelomgeving
 
-![Project](images/Project.png)
+![Project](Images/Project.png)
 
 ### 4.1 De Spawn
 De spawn bevat de volgende objecten: Start, Map, Map (1), Start (1) en CubeSpawn. Start en Start (1) zijn de locaties waar de obstacles zullen spawnen. Map en Map (1) zijn de wegen die naar de jumper leiden, deze objecten bevatten ook beiden een spawner.cs script (*dit komt later aanbod*). Tenslotte heeft het spawn object nog een CubeSpawn object, dit is de locatie waar de jumper opnieuw zal spawnen.
 
 ### 4.2 De Jumper
 De jumper is onze ml-agent en bevat de volgende componenten: behaviour parameters, jumper script, decision requester en een rayperception sensor 3D.
-![JumperParams](images/JumperParams.png)
+![JumperParams](Images/JumperParams.png)
 Ook bevat de jumper nog een object: Cube (1). Dit object heeft ook nog een rayperception sensor 3D.
 
 ### 4.3 Restrictions
@@ -61,25 +61,25 @@ __OnCollissionEnter()__ zal er voor zorgen dat bij het aanraken van een muur het
 
 
 
-![ObstacleClass](images/ObstacleClass.png)
+![ObstacleClass](Images/ObstacleClass.png)
 
 
 ### 5.2 Spawner
 Dit script bestaat uit vier parameters hiebij kan je het __gameobject__ meegeven dat na een x aantal tijd opnieuw op het speelveld komt. De random gekozen tijd dat dit object opnieuw in het speelveld komt regelen we met een __minTime__ en __maxTime__. Zo kunnen we kiezen hoeveel tijd er minimum of maximum tussen mag zitten bij het object. Verder kiezen we ook nog een onzichtbaar object dat de __start__ aangeeft waar het object mag tevoorschijn komen.
 
-![ParamsSpawner](images/ParamsSpawner.png)
+![ParamsSpawner](Images/ParamsSpawner.png)
 
 Voor de spawner hebben we twee methodes, namelijk __Start()__ en __SpawnObstacle()__. De __Start()__ methode zorgt ervoor dat __SpawnObstacle()__ telkens wordt uitgevoerd.
 
 Bij __spawnObstacle()__ geven we de random tijd mee en ook de positie naar waar het object moet gaan. 
 
-![MethodSpawner](images/MethodSpawner.png)
+![MethodSpawner](Images/MethodSpawner.png)
 
 ### 5.3 Spawner2
 
 Dit script is bijna het zelfde als het script van Spawner. Het enigste verschil is dat hier de richting moesten veranderen waar de objecten naar toe gaan. Dit konden we realiseren door een stukje code toe te voegen. 
 
-![Spawner2](images/Spawner2.png)
+![Spawner2](Images/Spawner2.png)
 
 ### 5.4 Jumper
 
@@ -109,10 +109,10 @@ Als we deze methodes aan elkaar wat koppelen en onze agent trainen krijgen we ee
 De configuratie van het brein van de jumper gebeurt in de jumper.yml file. Deze file bevindt zich in de Learning folder van ons project.
 Deze learning folder is ook de plek waar we het brein van de jumper trainen.
 
-![Config](images/Config.png)
+![Config](Images/Config.png)
 
 ## Demo
 In de demo zien we het leerproces van de agent. We zien een positieve evolutie. Zo kan de agent al zelf de beslissing maken wanneer hij moet springen. 
 
-![Demo](images/Demo.gif)
+![Demo](Images/Demo.gif)
 
