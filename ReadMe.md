@@ -43,6 +43,7 @@ De spawn bevat de volgende objecten: Start, Map, Map (1), Start (1) en CubeSpawn
 ### 4.2 De Jumper
 De jumper is onze ml-agent en bevat de volgende componenten: behaviour parameters, jumper script, decision requester en een rayperception sensor 3D.
 ![JumperParams](Images/JumperParams.png)
+
 Ook bevat de jumper nog een object: Cube (1). Dit object heeft ook nog een rayperception sensor 3D.
 
 ### 4.3 Restrictions
